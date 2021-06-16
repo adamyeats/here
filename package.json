@@ -1,0 +1,24 @@
+{
+  "name": "here",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.3.1"
+  },
+  "workspaces": [
+    "./client",
+    "./server"
+  ],
+  "scripts": {
+    "start": "node server/app.js",
+    "build": "npm run build -w client",
+    "dev": "concurrently \"npm run dev -w server\" \"PORT=3001 npm run start -w client\""
+  },
+  "volta": {
+    "node": "14.17.1",
+    "npm": "7.17.0"
+  }
+}
