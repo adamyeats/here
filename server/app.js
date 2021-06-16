@@ -52,4 +52,4 @@ app.get('/', (req, res) => {
   res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
 });
 
-server.listen(3000);
+server.listen(parseInt(process.env.PORT, 10) || 3000);
