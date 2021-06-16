@@ -44,6 +44,7 @@ io.on('connection', socket => {
 
   socket.on('location', msg => {
     redis.sadd('locations', JSON.stringify(msg));
+    io.emit('location', [msg]);
   });
 });
 
