@@ -7,7 +7,12 @@ const { Server } = require('socket.io');
 const { instrument, RedisStore } = require('@socket.io/admin-ui');
 const Redis = require('ioredis');
 
-const redis = new Redis(process.env.REDIS_TLS_URL);
+const redis = new Redis(process.env.REDIS_TLS_URL, {
+  tls: {
+    rejectUnauthorized: false
+  }
+});
+
 const app = express();
 const server = http.createServer(app);
 
