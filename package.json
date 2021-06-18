@@ -14,7 +14,7 @@
   "scripts": {
     "start": "node server/app.js",
     "build": "npm run build -w client",
-    "dev": "concurrently \"npm run dev -w server\" \"PORT=3001 npm run start -w client\""
+    "build:watch": "concurrently \"npm run dev -w server\" \"PORT=3001 npm run start -w client\""
   },
   "engines": {
     "node": "16.x"
