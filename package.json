@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "devDependencies": {
-    "concurrently": "^6.2.1",
+    "concurrently": "^6.3.0",
     "nodemon": "^2.0.13",
     "prettier": "^2.4.1"
   },
