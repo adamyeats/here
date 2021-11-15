@@ -4,7 +4,7 @@
   "private": true,
   "devDependencies": {
     "concurrently": "^6.4.0",
-    "nodemon": "^2.0.14",
+    "nodemon": "^2.0.15",
     "prettier": "^2.4.1"
   },
   "workspaces": [
