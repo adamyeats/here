@@ -7,7 +7,7 @@ const { Server } = require('socket.io');
 const Redis = require('ioredis');
 
 // using redis to cache locations in a set
-const redis = new Redis(process.env.REDISCLOUD_URL || process.env.REDIS_URL);
+const redis = new Redis(process.env.REDIS_URL);
 
 const app = express();
 const server = http.createServer(app);
