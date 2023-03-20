@@ -5,7 +5,7 @@
   "devDependencies": {
     "concurrently": "^7.6.0",
     "nodemon": "^2.0.21",
-    "prettier": "^2.8.4"
+    "prettier": "^2.8.5"
   },
   "workspaces": [
     "./client",
